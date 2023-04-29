@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="roleChoice" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #7FFFD4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.SignUpController">
+   <children>
+      <TextField fx:id="cinField" layoutX="74.0" layoutY="148.0" opacity="0.77" promptText="CIN" />
+      <TextField fx:id="firstNameField" layoutX="337.0" layoutY="148.0" opacity="0.77" promptText="First Name" />
+      <TextField fx:id="lastNamefield" layoutX="623.0" layoutY="148.0" opacity="0.77" promptText="Last Name" />
+      <TextField fx:id="zoneField" layoutX="183.0" layoutY="233.0" opacity="0.77" promptText="Adress" />
+      <DatePicker fx:id="birthDayField" layoutX="511.0" layoutY="233.0" opacity="0.77" promptText="mm/dd/yyyy" />
+      <TextField fx:id="emailField" layoutX="183.0" layoutY="542.0" promptText="email" />
+      <PasswordField fx:id="passwordField" layoutX="538.0" layoutY="542.0" promptText="password" />
+      <Label layoutX="38.0" layoutY="28.0" prefHeight="36.0" prefWidth="294.0" text="PROVIDE YOUR PERSONAL INFORMATION" />
+      <Separator layoutX="101.0" layoutY="305.0" prefHeight="3.0" prefWidth="694.0" />
+      <Button fx:id="btnSignUp" layoutX="388.0" layoutY="640.0" mnemonicParsing="false" onAction="#btnSignUpClicked" text="Sign Up" />
+      <Separator layoutX="332.0" layoutY="619.0" prefWidth="200.0" />
+      <Button fx:id="ClientBtn" layoutX="630.0" layoutY="393.0" mnemonicParsing="false" onAction="#ClientBtnClicked" opacity="0.72" text="CLIENT" />
+      <Button fx:id="patientBtn" layoutX="501.0" layoutY="393.0" mnemonicParsing="false" onAction="#patientBtnClicked" opacity="0.73" text="PATIENT" />
+      <Button fx:id="doctorBtn" layoutX="357.0" layoutY="393.0" mnemonicParsing="false" onAction="#doctorBtnClicked" opacity="0.72" text="DOCTOR" />
+      <Button fx:id="nutBTN" layoutX="175.0" layoutY="393.0" mnemonicParsing="false" onAction="#nutBTNClicked" opacity="0.73" text="NUTRITIONIST" />
+      <Separator layoutX="90.0" layoutY="450.0" prefHeight="3.0" prefWidth="694.0" />
+      <Label layoutX="101.0" layoutY="319.0" text="YOU ARE A : " />
+      <Label layoutX="101.0" layoutY="464.0" text="CONNECTION INFORMATION" />
+      <Label fx:id="roleLable" layoutX="185.0" layoutY="309.0" prefHeight="36.0" prefWidth="209.0" />
+      <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="308.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images/icons8-contacts-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="592.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images/icons8-contacts-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="484.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images/icons8-calendar-10-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="160.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images/icons8-home-address-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="40.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images/icons8-debit-card-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="39.0" layoutX="140.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images/icons8-marked-mail-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="493.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images/icons8-lock-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
