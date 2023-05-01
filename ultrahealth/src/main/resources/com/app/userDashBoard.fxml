@@ -9,9 +9,8 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="845.0" prefWidth="1070.0" style="-fx-background-color: #7FFFD4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.UserDashboardController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="845.0" prefWidth="1070.0" style="-fx-background-color: #04E9F8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.UserDashboardController">
    <children>
       <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="541.0" layoutY="6.0" onMouseClicked="#iconProfileClicked" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -20,7 +19,7 @@
       </ImageView>
       <Label fx:id="profile" layoutX="698.0" layoutY="7.0" prefHeight="39.0" prefWidth="212.0" textAlignment="CENTER" />
       <Label fx:id="role" layoutX="580.0" layoutY="6.0" prefHeight="39.0" prefWidth="94.0" />
-      <Pane layoutX="20.0" layoutY="467.0" prefHeight="286.0" prefWidth="532.0" style="-fx-background-color: #17969C;">
+      <Pane layoutX="16.0" layoutY="536.0" prefHeight="286.0" prefWidth="532.0" style="-fx-background-color: #17969C;">
          <children>
             <Label fx:id="cin" layoutX="45.0" layoutY="46.0" prefHeight="51.0" prefWidth="155.0" textFill="#fffbfb" />
             <Label fx:id="lastName" layoutX="62.0" layoutY="114.0" prefHeight="31.0" prefWidth="197.0" textFill="WHITE" />
@@ -71,7 +70,7 @@
             <Label layoutX="5.0" layoutY="6.0" prefHeight="31.0" prefWidth="164.0" text="Acount information :" />
          </children>
       </Pane>
-      <Pane layoutX="580.0" layoutY="467.0" prefHeight="286.0" prefWidth="478.0" style="-fx-background-color: #17969C;">
+      <Pane layoutX="580.0" layoutY="536.0" prefHeight="286.0" prefWidth="478.0" style="-fx-background-color: #17969C;">
          <children>
             <TextField fx:id="cinEditField" layoutX="34.0" layoutY="38.0" promptText="CIN ..." />
             <TextField fx:id="firstNameEditField" layoutX="255.0" layoutY="38.0" promptText="First Name" />
@@ -82,16 +81,51 @@
             <Button fx:id="updateBtn" layoutX="384.0" layoutY="248.0" mnemonicParsing="false" onAction="#updateBtnClicked" style="-fx-background-color: #69FC5A;" text="Update" />
          </children>
       </Pane>
-      <Separator layoutX="86.0" layoutY="438.0" prefHeight="9.0" prefWidth="934.0" />
-      <Pane layoutX="16.0" layoutY="55.0" prefHeight="373.0" prefWidth="1037.0" style="-fx-background-color: #2D5B5D;">
+      <Separator layoutX="113.0" layoutY="507.0" prefHeight="9.0" prefWidth="934.0" />
+      <Pane layoutX="176.0" layoutY="59.0" prefHeight="436.0" prefWidth="838.0" style="-fx-background-color: #2D5B5D;">
          <children>
-            <Label layoutX="33.0" layoutY="26.0" prefHeight="39.0" prefWidth="138.0" text="Actions :" textFill="#93f264">
-               <font>
-                  <Font name="Garuda" size="28.0" />
-               </font>
-            </Label>
+            <Pane layoutX="966.0" layoutY="14.0" prefHeight="119.0" prefWidth="57.0" />
          </children>
       </Pane>
       <Button fx:id="logOutBtn" layoutX="932.0" layoutY="15.0" mnemonicParsing="false" onAction="#logOutBtnClicked" style="-fx-background-color: #03B8FB;" text="Log Out" />
+      <Pane layoutX="16.0" layoutY="277.0" prefHeight="58.0" prefWidth="137.0">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="16.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/etiquette.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="78.0" layoutX="76.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/lhistoire.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="20.0" layoutY="122.0" prefHeight="155.0" prefWidth="129.0">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/boutique.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/entrevue.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="74.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/evenement.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="74.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/forum.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Separator layoutX="153.0" layoutY="137.0" orientation="VERTICAL" prefHeight="221.0" prefWidth="0.0" />
    </children>
 </AnchorPane>
