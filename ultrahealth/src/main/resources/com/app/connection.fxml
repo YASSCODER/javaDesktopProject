@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="791.0" style="-fx-background-color: #7FFFD4; -fx-max-width: 1100; -fx-max-height: 900; -fx-pref-width: 1100; -fx-pref-height: 900;" styleClass="mainWindow" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.ConnectionController">
+   <children>
+      <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="235.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <!-- <image>
+            <Image url="@/user-comment.png" />
+         </image> -->
+      </ImageView>
+      <Label layoutX="26.0" layoutY="14.0" prefHeight="44.0" prefWidth="162.0" text="Ultra Health">
+         <font>
+            <Font name="KacstQurn" size="23.0" />
+         </font>
+      </Label>
+      <Pane layoutX="177.0" layoutY="165.0" prefHeight="588.0" prefWidth="723.0">
+         <children>
+            <Button fx:id="connectionButton" layoutX="131.0" layoutY="401.0" mnemonicParsing="false" onAction="#connectionClicked" style="-fx-background-color: #043D5A;" text="connection" textFill="#f5f5f5" />
+            <Button fx:id="signUpButton" layoutX="532.0" layoutY="401.0" mnemonicParsing="false" onAction="#signUpClicked" style="-fx-background-color: #043D5A;" text="sign up" textFill="WHITE" />
+            <TextField fx:id="lastNameField" layoutX="261.0" layoutY="73.0" opacity="0.68" promptText="last name" />
+            <PasswordField fx:id="passwordField" layoutX="259.0" layoutY="223.0" opacity="0.58" promptText="password" />
+            <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="215.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@./images/icons8-lock-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="213.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user-comment.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
